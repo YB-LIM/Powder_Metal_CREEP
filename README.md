@@ -1,4 +1,4 @@
-![CEEQ](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/e177883c-4232-4e4d-801f-6d7d6cfd17ac)# Powder_Metal_CREEP
+# Powder_Metal_CREEP
 Duva&amp;Crow (1994) creep model with explicit time integration implemented with Abaqus CREEP subroutine
 
 # AUTHOR
