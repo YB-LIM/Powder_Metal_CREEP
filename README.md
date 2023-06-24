@@ -6,4 +6,5 @@ Name: Youngbin LIM
 <br>E-mail: lyb0684@naver.com<br>
 
 # Graphical abstract
-![Abstract](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/1e9d2608-ee6f-4b2f-b2c7-0308024e6bca)
+![Abstract](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/dd6e4ed1-e905-456a-ad1f-304b81bd759d)
+
