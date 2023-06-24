@@ -9,4 +9,6 @@ Name: Youngbin LIM
 ![Abstract](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/dd6e4ed1-e905-456a-ad1f-304b81bd759d)
 
 # Single element Test
+Single element test was performed to validate the CREEP sbroutine<br>
+The relative density history was compared with reference case (Introduction to Computational Plasticity, Dunne and Petrinic, 2005)
 ![Single_Element](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/312ab1fb-3758-4def-900a-0b6c2f22cd84)
