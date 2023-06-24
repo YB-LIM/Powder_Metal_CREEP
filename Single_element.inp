@@ -1,0 +1,59 @@
+**
+** Single element model for powder metal creep
+** Author: Youngbin LIM
+** Contact: lyb0684@naver.com
+**
+*Heading
+**
+*NODE, NSET=ALLNODES
+1,
+2, ,1.0
+3,-0.5,1.0
+4,-0.5
+**
+*ELEMENT, TYPE=CPE4R, ELSET=POROUS
+1, 1,2,3,4
+**
+*SOLID SECTION, ELSET=POROUS, MATERIAL=MAT1
+**
+*MATERIAL, NAME=MAT1
+*ELASTIC, DEPENDENCIES=1
+2000, 0.29, 0.00
+2000, 0.29,0, 0.01
+**
+*USER DEFINED FIELD
+**
+*Creep, law=USER
+*Swelling, law=USER
+*DEPVAR
+5
+**
+*nset, nset=xfix node1
+1,2
+*nset, nset=xfix node2
+3,4
+*nset, nset=yfix node
+1,4
+**
+*initial conditions, type=temperature
+allnodes, 1198.15
+**
+*boundary
+xfix node1,1,1,,
+xfix node2,1,1,,
+yfix node,2,2,,
+**
+*step, inc=1000000, nlgeom=YES
+*Visco, cetol=1e-04
+0.00001, 3000, 1e-10, 100
+**
+*DLOAD
+1,p2,20.0
+** 
+*Output, field, frequency=1
+*Node Output
+NT, U
+*Element Output, directions=YES
+E, CE, CEEQ, CESW, S, TEMP, SDV
+** 
+*End Step
