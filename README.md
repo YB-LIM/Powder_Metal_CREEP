@@ -6,9 +6,7 @@ Name: Youngbin LIM
 <br>E-mail: lyb0684@naver.com<br>
 
 # Single element Test
-Single element test was performed to validate the CREEP sbroutine<br>
-The relative density history was compared with reference case (Introduction to Computational Plasticity, Dunne and Petrinic, 2005).
-Material parameters for the validation model is applied in the subroutine and input files<br><br>
+Single element test was performed to validate the CREEP sbroutine. The relative density history was compared with reference case (Introduction to Computational Plasticity, Dunne and Petrinic, 2005). Material parameters for the validation model is applied in the subroutine and input files<br><br>
 ![Single_Element](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/312ab1fb-3758-4def-900a-0b6c2f22cd84)
 
 # Indentation simulation
