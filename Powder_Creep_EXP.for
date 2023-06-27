@@ -83,9 +83,21 @@ C
 C
       AA = A0*EXP(-ACTE/(RR*TEMP))
 C
-      DECRA(1) = AA*SMALLA*QTILD*(SS**((AN-1.0)/2))*DTIME ! Creep strain increment
-C	  
-      DESWA(1) = AA*SMALLB*SMEAN*(SS**((AN-1.0)/2))*DTIME ! Swelling strain increment    
+      CEEQ_ABS = ABS(AA*SMALLA*QTILD*(SS**((AN-1.0)/2))*DTIME) ! Calculate Absolute creep strain increment
+C
+      IF (CEEQ_ABS > 1.0E-9) THEN
+         DECRA(1) = AA*SMALLA*QTILD*(SS**((AN-1.0)/2))*DTIME
+      ELSE
+         DECRA(1) = 0.0
+      END IF
+C
+      CESW_ABS = ABS(AA*SMALLB*SMEAN*(SS**((AN-1.0)/2))*DTIME) ! Calculate Absolute swelling strain increment	     
+C
+      IF (CESW_ABS > 1.0E-9) THEN
+         DESWA(1) = AA*SMALLB*SMEAN*(SS**((AN-1.0)/2))*DTIME
+      ELSE
+         DESWA(1) = 0.0
+      END IF
 C
       write (7,*) 'DECRA(1) = ',DECRA(1)
       write (7,*) 'DESWA(1) = ',DESWA(1)
