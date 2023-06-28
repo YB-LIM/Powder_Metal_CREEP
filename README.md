@@ -16,6 +16,7 @@ Countours from Indentation simulation
 
 # Compaction forming of a gear
 Countours from compaction forming of a gear simulation
+![Honeycam 2023-06-28 15-22-43](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/5f597651-976a-4081-80b4-3fa9a055a42e)
 
 
 # Run command
