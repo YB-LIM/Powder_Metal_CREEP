@@ -67,8 +67,14 @@ C
       STATEV(4) = STATEV(1) + STATEV(2) + STATEV(3)   ! Volumetric strain
 C
       VOL = STATEV(4)           
-      STATEV(5) = D_ZERO*EXP(-VOL)  ! Calculate relative density from volumetric strain
-      DENS = STATEV(5)  ! DENS = Relative density
+C
+      IF (D_ZERO*EXP(-VOL) > 1.0) THEN
+         STATEV(5) = 1.0
+         DENS = STATEV(5)		 
+      ELSE
+         STATEV(5) = D_ZERO*EXP(-VOL) ! Calculate relative density from volumetric strain
+         DENS = STATEV(5) ! DENS = Relative density
+      END IF
 C
       SMALLA = (1.0+(2.0/3.0)*(1.0-DENS))/(DENS**(2.0*AN/(AN+1.0)))
 C
