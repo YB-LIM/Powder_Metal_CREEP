@@ -14,7 +14,7 @@ Single element test was performed for in-plane compression with plain strain con
 Countours from Indentation simulation 
 ![Abstract](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/dd6e4ed1-e905-456a-ad1f-304b81bd759d)
 
-# Compaction forming of a gear
+# Powder Compaction Forming of a Gear
 Countours from compaction forming of a gear simulation
 ![Honeycam 2023-06-28 15-22-43](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/5f597651-976a-4081-80b4-3fa9a055a42e)
 
