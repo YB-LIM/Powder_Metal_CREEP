@@ -14,6 +14,10 @@ Single element test was performed for in-plane compression with plain strain con
 Countours from Indentation simulation 
 ![Abstract](https://github.com/YB-LIM/Powder_Metal_CREEP/assets/105615106/dd6e4ed1-e905-456a-ad1f-304b81bd759d)
 
+# Compaction forming of a gear
+Countours from compaction forming of a gear simulation
+
+
 # Run command
 abaqus job=Indentation user=Powder_Creep_EXP.for int cpus=(number of cpus)
 <br>
