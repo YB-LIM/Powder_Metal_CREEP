@@ -56,7 +56,7 @@ C
      1 TIME(3),COORDS(3),EC(2),ESW(2)
 C
 C
-      LEXIMP = 0        ! Flag for explicit time integration
+      LEXIMP = 1        ! Flag for Implicit time integration
       LEND = 0          ! Calculation is performed at the start of the increment
       D_ZERO = 0.78     ! Initial relative density
       AN = 1.53         ! Constant n
