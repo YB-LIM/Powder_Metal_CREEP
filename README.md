@@ -1,5 +1,5 @@
 # Powder_Metal_CREEP
-Duva&amp;Crow (1994) pressure dependent creep model with explicit time integration scheme implemented with Abaqus CREEP subroutine<br><br>
+Duva&amp;Crow (1994) pressure dependent creep model implemented with Abaqus CREEP subroutine<br><br>
 Written on Intel® Fortran Version 19.0.5 (Abaqus 2023)
 
 # AUTHOR
