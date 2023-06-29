@@ -20,7 +20,7 @@ Countours from compaction forming of a gear simulation
 
 
 # Run command
-abaqus job=model_name user=Powder_Creep_EXP.for int cpus=(number of cpus)
+abaqus job=model_name user=Powder_Creep.for int cpus=(number of cpus)
 <br>
 
 # Buy me a coffee
