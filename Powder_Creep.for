@@ -1,12 +1,11 @@
-C#################################################################
+C########################################################################
 C                 
 C     Duva and Crow, 1994 creep model implemented with CREEP subroutine
 C
+C     AUTHOR: Youngbin LIM
+C     CONTACT: lyb0684@naver.com
 C
-C     Author: Youngbin LIM
-C     Contact: lyb0684@naver.com
-C
-C################################################################
+C########################################################################
 C
 C     STATEV(1) : True (logarithmic) strain in 1-direction
 C     STATEV(2) : True (logarithmic) strain in 2-direction
@@ -15,6 +14,10 @@ C     STATEV(4) : Volumetric strain (Sum of STATEV 1~3)
 C     STATEV(5) : Relative density     
 C     DECRA(1)  : Creep strain increment 
 C     DESWA(1)  : Swelling strain increment
+C     DECRA(4)  : Derivative of Creep strain increment with respect to Pressure
+C     DESWA(4)  : Derivative of Swelling strain increment with respect to Pressure
+C     DECRA(5)  : Derivative of Creep strain increment with respect to Deviatoric stress
+C     DESWA(5)  : Derivative of Swelling strain increment with respect to Deviatoric stress
 C
       SUBROUTINE USDFLD(FIELD,STATEV,PNEWDT,DIRECT,T,CELENT,
      1 TIME,DTIME,CMNAME,ORNAME,NFIELD,NSTATV,NOEL,NPT,LAYER,
